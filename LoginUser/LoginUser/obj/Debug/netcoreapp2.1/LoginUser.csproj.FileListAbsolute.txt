@@ -1,0 +1,17 @@
+C:\Users\giana\source\repos\LoginUser\LoginUser\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\giana\source\repos\LoginUser\LoginUser\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\giana\source\repos\LoginUser\LoginUser\bin\Debug\netcoreapp2.1\LoginUser.deps.json
+C:\Users\giana\source\repos\LoginUser\LoginUser\bin\Debug\netcoreapp2.1\LoginUser.runtimeconfig.json
+C:\Users\giana\source\repos\LoginUser\LoginUser\bin\Debug\netcoreapp2.1\LoginUser.runtimeconfig.dev.json
+C:\Users\giana\source\repos\LoginUser\LoginUser\bin\Debug\netcoreapp2.1\LoginUser.dll
+C:\Users\giana\source\repos\LoginUser\LoginUser\bin\Debug\netcoreapp2.1\LoginUser.pdb
+C:\Users\giana\source\repos\LoginUser\LoginUser\obj\Debug\netcoreapp2.1\LoginUser.csprojAssemblyReference.cache
+C:\Users\giana\source\repos\LoginUser\LoginUser\obj\Debug\netcoreapp2.1\LoginUser.AssemblyInfoInputs.cache
+C:\Users\giana\source\repos\LoginUser\LoginUser\obj\Debug\netcoreapp2.1\LoginUser.AssemblyInfo.cs
+C:\Users\giana\source\repos\LoginUser\LoginUser\obj\Debug\netcoreapp2.1\LoginUser.csproj.CoreCompileInputs.cache
+C:\Users\giana\source\repos\LoginUser\LoginUser\obj\Debug\netcoreapp2.1\LoginUser.RazorAssemblyInfo.cache
+C:\Users\giana\source\repos\LoginUser\LoginUser\obj\Debug\netcoreapp2.1\LoginUser.RazorAssemblyInfo.cs
+C:\Users\giana\source\repos\LoginUser\LoginUser\obj\Debug\netcoreapp2.1\LoginUser.RazorTargetAssemblyInfo.cache
+C:\Users\giana\source\repos\LoginUser\LoginUser\obj\Debug\netcoreapp2.1\LoginUser.dll
+C:\Users\giana\source\repos\LoginUser\LoginUser\obj\Debug\netcoreapp2.1\LoginUser.pdb
+C:\Users\giana\source\repos\LoginUser\LoginUser\obj\Debug\netcoreapp2.1\LoginUser.genruntimeconfig.cache
