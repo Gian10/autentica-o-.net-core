@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using LoginUser.Data;
 using LoginUser.Models;
 using LoginUser.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LoginUser.Controllers
 {
@@ -23,6 +24,7 @@ namespace LoginUser.Controllers
         }
 
         // GET: api/Users
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<List<User>>> GetUser()
         {
