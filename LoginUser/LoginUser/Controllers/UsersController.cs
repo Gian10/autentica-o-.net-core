@@ -23,8 +23,8 @@ namespace LoginUser.Controllers
             _service = service;
         }
 
-        // GET: api/Users
         [Authorize]
+        // GET: api/Users
         [HttpGet]
         public async Task<ActionResult<List<User>>> GetUser()
         {

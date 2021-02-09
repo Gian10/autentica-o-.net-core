@@ -17,6 +17,7 @@ using LoginUser.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using LoginUser.Helpers;
 
 namespace LoginUser
 {
@@ -45,23 +46,12 @@ namespace LoginUser
                                         = new DefaultContractResolver());
 
             services.AddScoped<UserService>();
+            services.AddScoped<LoginService>();
             services.AddSingleton<IConfiguration>(Configuration);
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
 
-            // configuração do JWT
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
-            {
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
 
-                    ValidIssuer = Configuration["Jwt:Issuer"],
-                    ValidAudience = Configuration["Jwt:Audience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
-                };
-            });
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -76,9 +66,15 @@ namespace LoginUser
                 app.UseHsts();
             }
 
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+
+            // injeção do Middleware personalizado
+            app.UseMiddleware<JwtMiddleware>();
             app.UseHttpsRedirection();
             app.UseMvc();
-            app.UseAuthentication();
 
         }
     }
