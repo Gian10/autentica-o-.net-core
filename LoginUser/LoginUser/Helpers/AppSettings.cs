@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 
 namespace LoginUser.Helpers
 {
-    public class JwtAuth
+    public class AppSettings
     {
+        public string Secret { get; set; }
+
     }
 }

@@ -13140,6 +13140,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 2.1.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.14",
       "Microsoft.EntityFrameworkCore.Tools >= 2.1.14",
+      "Microsoft.Extensions.Hosting >= 2.1.1",
       "Microsoft.Extensions.Logging.Debug >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.BrowserLink >= 2.1.1",
@@ -13228,6 +13229,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.14, )"
+          },
+          "Microsoft.Extensions.Hosting": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
